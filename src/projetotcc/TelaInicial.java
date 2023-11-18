@@ -174,11 +174,11 @@ public class TelaInicial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotaodeConsultaActionPerformed(java.awt.event.ActionEvent evt) {                                                
-           new Login().setVisible(true);
+           new TelaDeLogin().setVisible(true);
     }
 
     private void BotaodeGerenciamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaodeGerenciamentoActionPerformed
-        // TODO add your handling code here:
+        new ConsultaTcc().setVisible(true);
     }//GEN-LAST:event_BotaodeGerenciamentoActionPerformed
 
     /**

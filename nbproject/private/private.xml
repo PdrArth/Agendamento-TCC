@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/Login.java</file>
-            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/ProjetoTcc.java</file>
-            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/TelaInicial.java</file>
+            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/TeladeEscolha.java</file>
+            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/TelaAluno.java</file>
+            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/TelaDeLogin.java</file>
+            <file>file:/F:/Downloads/ProjetoTcc/src/projetotcc/ConsultaTcc.java</file>
         </group>
     </open-files>
 </project-private>
