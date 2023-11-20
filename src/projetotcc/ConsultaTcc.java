@@ -29,6 +29,9 @@ public class ConsultaTcc extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
         jScrollPane1 = new javax.swing.JScrollPane();
         TabelaConsulta = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -36,8 +39,13 @@ public class ConsultaTcc extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
 
+        jMenu1.setText("File");
+        jMenuBar2.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar2.add(jMenu2);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 600));
 
         TabelaConsulta.setBackground(new java.awt.Color(255, 255, 255));
         TabelaConsulta.setModel(new javax.swing.table.DefaultTableModel(
@@ -90,7 +98,7 @@ public class ConsultaTcc extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 590, Short.MAX_VALUE)
         );
 
         pack();
@@ -108,7 +116,8 @@ public class ConsultaTcc extends javax.swing.JFrame {
     private void TeladeRetornoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TeladeRetornoActionPerformed
 
     }//GEN-LAST:event_TeladeRetornoActionPerformed
-    TelaAluno aluno = new TelaAluno();
+   
+
 
 
     /**
@@ -120,7 +129,10 @@ public class ConsultaTcc extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TabelaConsulta;
     private javax.swing.JMenu TeladeRetorno;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;

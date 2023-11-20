@@ -37,22 +37,23 @@ public class TeladeEscolha extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -170,6 +171,15 @@ public class TeladeEscolha extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem2);
 
+        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/monitor.png"))); // NOI18N
+        jMenuItem15.setText("Tela Inicial");
+        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem15ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem15);
+
         jMenuBar1.add(jMenu5);
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user.png"))); // NOI18N
@@ -212,51 +222,86 @@ public class TeladeEscolha extends javax.swing.JFrame {
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_gray.png"))); // NOI18N
         jMenu2.setText("Professor");
 
-        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
-        jMenuItem6.setText("Deletar");
-        jMenu2.add(jMenuItem6);
+        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_add.png"))); // NOI18N
+        jMenuItem8.setText("Cadastrar");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem8);
 
         jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_edit.png"))); // NOI18N
         jMenuItem7.setText("Atualizar");
         jMenu2.add(jMenuItem7);
 
-        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_add.png"))); // NOI18N
-        jMenuItem8.setText("Cadastrar");
-        jMenu2.add(jMenuItem8);
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
+        jMenuItem6.setText("Deletar");
+        jMenu2.add(jMenuItem6);
 
         jMenuBar1.add(jMenu2);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/house.png"))); // NOI18N
         jMenu3.setText("Sala de Defesa");
 
-        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
-        jMenuItem9.setText("Deletar");
-        jMenu3.add(jMenuItem9);
-
         jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_edit.png"))); // NOI18N
         jMenuItem10.setText("Atualizar");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem10);
 
         jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_add.png"))); // NOI18N
         jMenuItem11.setText("Cadastrar");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem11);
+
+        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
+        jMenuItem9.setText("Deletar");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem9);
 
         jMenuBar1.add(jMenu3);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/report.png"))); // NOI18N
         jMenu4.setText("Agendamento");
 
-        jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
-        jMenuItem12.setText("Deletar");
-        jMenu4.add(jMenuItem12);
+        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_add.png"))); // NOI18N
+        jMenuItem14.setText("Cadastrar");
+        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem14ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem14);
 
         jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_edit.png"))); // NOI18N
         jMenuItem13.setText("Atualizar");
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem13);
 
-        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_add.png"))); // NOI18N
-        jMenuItem14.setText("Cadastrar");
-        jMenu4.add(jMenuItem14);
+        jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/user_delete.png"))); // NOI18N
+        jMenuItem12.setText("Deletar");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem12);
 
         jMenuBar1.add(jMenu4);
 
@@ -296,6 +341,35 @@ public class TeladeEscolha extends javax.swing.JFrame {
      new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_SaladeDefesa1ActionPerformed
 
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+       new TeladeAgendamento().setVisible(true);
+
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        new TelaProfessor().setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        new TelaAluno().setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        new TelaAluno().setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        new TelaAluno().setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+        new TelaInicial().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem15ActionPerformed
+
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -304,24 +378,27 @@ public class TeladeEscolha extends javax.swing.JFrame {
         new TelaInicial().setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu1ActionPerformed
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+new TelaSaladeDefesa().setVisible(true);
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-                new TelaAluno().setVisible(true);
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+new TelaSaladeDefesa().setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
 
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+new TelaSaladeDefesa().setVisible(true);
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-                new TelaAluno().setVisible(true);
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+        new TeladeAgendamento().setVisible(true);
 
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-                new TelaAluno().setVisible(true);
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+      new TeladeAgendamento().setVisible(true);
 
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -349,6 +426,7 @@ public class TeladeEscolha extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
