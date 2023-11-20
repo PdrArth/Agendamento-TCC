@@ -55,7 +55,7 @@ public class TeladeEscolha extends javax.swing.JFrame {
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem12 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         TelaEscolha.setBackground(new java.awt.Color(20, 16, 44));
 
@@ -140,14 +140,14 @@ public class TeladeEscolha extends javax.swing.JFrame {
                         .addComponent(BotaoProfessor1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(110, 110, 110)
                         .addComponent(SaladeDefesa1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 6, Short.MAX_VALUE))
                     .addGroup(TelaEscolhaLayout.createSequentialGroup()
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel13)))
                 .addGap(66, 66, 66)
                 .addComponent(Agendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+                .addGap(41, 41, 41))
         );
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/icons 1/information.png"))); // NOI18N
@@ -315,7 +315,7 @@ public class TeladeEscolha extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TelaEscolha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(TelaEscolha, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -329,24 +329,32 @@ public class TeladeEscolha extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoAlunoActionPerformed
 
     private void AgendamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgendamentoActionPerformed
+        this.dispose();
         new TeladeAgendamento().setVisible(true);
     }//GEN-LAST:event_AgendamentoActionPerformed
 
     private void BotaoProfessor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoProfessor1ActionPerformed
-       new TelaProfessor().setVisible(true);
+              this.dispose();
+        new TelaProfessor().setVisible(true);
 
     }//GEN-LAST:event_BotaoProfessor1ActionPerformed
 
     private void SaladeDefesa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaladeDefesa1ActionPerformed
-     new TelaSaladeDefesa().setVisible(true);
+            this.dispose();
+
+        new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_SaladeDefesa1ActionPerformed
 
     private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
-       new TeladeAgendamento().setVisible(true);
+               this.dispose();
+
+        new TeladeAgendamento().setVisible(true);
 
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+                this.dispose();
+
         new TelaProfessor().setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
@@ -355,18 +363,26 @@ public class TeladeEscolha extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+               this.dispose();
+
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+                this.dispose();
+
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+                this.dispose();
+
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+                this.dispose();
+
         new TelaInicial().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
@@ -375,28 +391,40 @@ public class TeladeEscolha extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        this.dispose();
+
         new TelaInicial().setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
-new TelaSaladeDefesa().setVisible(true);
+        this.dispose();
+
+        new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-new TelaSaladeDefesa().setVisible(true);
+        this.dispose();
+
+        new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-new TelaSaladeDefesa().setVisible(true);
+        this.dispose();
+
+        new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+           this.dispose();
+
         new TeladeAgendamento().setVisible(true);
 
     }//GEN-LAST:event_jMenuItem13ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
-      new TeladeAgendamento().setVisible(true);
+              this.dispose();
+
+        new TeladeAgendamento().setVisible(true);
 
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 

@@ -7,6 +7,9 @@ package projetotcc;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  *
@@ -67,7 +70,7 @@ public class TelaAluno extends javax.swing.JFrame {
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem12 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 600));
 
         jPanel1.setBackground(new java.awt.Color(20, 25, 44));
@@ -443,7 +446,7 @@ public class TelaAluno extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void TBAlunoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TBAlunoKeyReleased
+    private void TBAlunoKeyReleased(java.awt.event.KeyEvent evt) {                                    
         if(TBAluno.getSelectedRow() != -1){
             TxtNameTela.setText(TBAluno.getValueAt(TBAluno.getSelectedRow(),0).toString());
             TxtSexo.setSelectedItem(TBAluno.getValueAt(TBAluno.getSelectedRow(),2).toString());
@@ -451,9 +454,9 @@ public class TelaAluno extends javax.swing.JFrame {
 
 
         }
-    }//GEN-LAST:event_TBAlunoKeyReleased
-
+    }
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        this.dispose();
         new TeladeEscolha().setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
@@ -462,18 +465,22 @@ public class TelaAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+        this.dispose();
         new TelaInicial().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        this.dispose();
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        this.dispose();
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        this.dispose();
         new TelaAluno().setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
@@ -482,48 +489,51 @@ public class TelaAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        this.dispose();
         new TelaProfessor().setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        this.dispose();
         new TelaProfessor().setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        this.dispose();
         new TelaProfessor().setVisible(true);
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        this.dispose();
         new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        this.dispose();
         new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        this.dispose();
         new TelaSaladeDefesa().setVisible(true);
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
     private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+        this.dispose();
         new TeladeAgendamento().setVisible(true);
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+        this.dispose();
         new TeladeAgendamento().setVisible(true);
     }//GEN-LAST:event_jMenuItem13ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        this.dispose();
         new TeladeAgendamento().setVisible(true);
     }
 //GEN-LAST:event_jMenuItem12ActionPerformed
-    public Object[] getDados() {
-    return new Object[] {
-        this.TxtNameTela.getText(),
-        this.TxtMatriculaTela.getText(),
-        this.TxtSexo.getSelectedItem()
-    };
-}
+    
 
 
     /**
@@ -535,7 +545,7 @@ public class TelaAluno extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TBAluno;
     private javax.swing.JTextField TxtMatriculaTela;
-    javax.swing.JTextField TxtNameTela;
+    private javax.swing.JTextField TxtNameTela;
     private javax.swing.JComboBox<String> TxtSexo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
