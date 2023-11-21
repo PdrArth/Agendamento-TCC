@@ -150,7 +150,7 @@
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="F:\Downloads\ProjetoTcc\logos_jpg\Design_sem_nome-removebg-preview.png"/>
+                  <Image iconType="3" name="/projetotcc/logos_jpg/Design_sem_nome-removebg-preview.png"/>
                 </Property>
               </Properties>
             </Component>

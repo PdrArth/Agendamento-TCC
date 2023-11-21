@@ -103,7 +103,7 @@ public class TeladeEscolha extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("F:\\Downloads\\ProjetoTcc\\logos_jpg\\Design_sem_nome-removebg-preview.png")); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projetotcc/logos_jpg/Design_sem_nome-removebg-preview.png"))); // NOI18N
 
         jLabel13.setFont(new java.awt.Font("Serif", 1, 20)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));

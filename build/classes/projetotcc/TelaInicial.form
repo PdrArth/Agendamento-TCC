@@ -140,7 +140,7 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="F:\Downloads\ProjetoTcc\logos_jpg\Design_sem_nome-removebg-preview.png"/>
+                  <Image iconType="3" name="/projetotcc/logos_jpg/Design_sem_nome-removebg-preview.png"/>
                 </Property>
               </Properties>
             </Component>
@@ -228,7 +228,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="CONSULTAR"/>
+                <Property name="text" type="java.lang.String" value="GERENCIAR"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaodeConsultaActionPerformed"/>
@@ -245,7 +245,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="GERENCIAR"/>
+                <Property name="text" type="java.lang.String" value="CONSULTAR"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaodeGerenciamentoActionPerformed"/>
