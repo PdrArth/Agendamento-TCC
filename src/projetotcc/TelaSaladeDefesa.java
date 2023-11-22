@@ -471,7 +471,7 @@ public class TelaSaladeDefesa extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        DefaultTableModel tbaluno = (DefaultTableModel) TBAluno.getModel();
-          Object [] dados = {TxtCodigoSala.getText(),TxxLocal.getText(),TxtNomedaSala.getText(),Inicio.getText(),Date.getText()};
+          Object [] dados = {TxtCodigoSala.getText(),TxxLocal.getText(),TxtNomedaSala.getText(),Date.getText(),Inicio.getText()};
           tbaluno.addRow(dados);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -481,7 +481,7 @@ public class TelaSaladeDefesa extends javax.swing.JFrame {
            TBAluno.setValueAt(TxtNomedaSala.getText(), TBAluno.getSelectedRow(), 1);
            TBAluno.setValueAt(TxxLocal.getText(), TBAluno.getSelectedRow(), 2);
             TBAluno.setValueAt(Date.getText(), TBAluno.getSelectedRow(), 3);
-             TBAluno.setValueAt(Inicio.getText(), TBAluno.getSelectedRow(), 3);
+             TBAluno.setValueAt(Inicio.getText(), TBAluno.getSelectedRow(), 4);
 
 
 
